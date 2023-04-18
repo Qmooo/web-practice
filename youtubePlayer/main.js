@@ -1,16 +1,16 @@
 let player;
 let currentPlay = 0;
-
+let answers = "A";
 function onYouTubeIframeAPIReady(){
     player = new YT.Player("player",{
         height:"390",
         width:"640",
-        videoId:playList[currentPlay],
+        videoId:playList[answers][currentPlay],
         playerVars:{
             autoplay:0,
             controls:0,
-            start:playTime[currentPlay][0],
-            end:playTime[currentPlay][1],
+            start:playTime[answers][currentPlay][0],
+            end:playTime[answers][currentPlay][1],
             iv_load_policy:3
         },
         events:{
@@ -29,21 +29,21 @@ function onPlayerReady(event){
 
 
 function onPlayerStateChange(event){
-    if(Math.floor(player.getCurrentTime())==playTime[currentPlay][1]){
-        if(currentPlay<playList.length-1){
+    if(Math.floor(player.getCurrentTime())==playTime[answers][currentPlay][1]){
+        if(currentPlay<playList[answers].length-1){
             currentPlay++;
             player.loadVideoById({
-                videoId:playList[currentPlay],
-                startSeconds:playTime[currentPlay][0],
-                endSeconds:playTime[currentPlay][1],
+                videoId:playList[answers][currentPlay],
+                startSeconds:playTime[answers][currentPlay][0],
+                endSeconds:playTime[answers][currentPlay][1],
                 suggestedQuality:"large"
             });
         }else{
             currentPlay=0;
             player.cueVideoById({
-                videoId:playList[currentPlay],
-                startSeconds:playTime[currentPlay][0],
-                endSeconds:playTime[currentPlay][1],
+                videoId:playList[answers][currentPlay],
+                startSeconds:playTime[answers][currentPlay][0],
+                endSeconds:playTime[answers][currentPlay][1],
                 suggestedQuality:"large"
             });
             $("h2").text("");

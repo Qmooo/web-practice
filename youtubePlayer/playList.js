@@ -1,11 +1,45 @@
-let playList = [
-    "SwZMS-ISbH4",
-    "Hlp8XD0R5qo",
-    "BedRbwndZE8"
-];
+let playList = {
+    "A":[
+        "78NED_I0lU0",
+        "Hlp8XD0R5qo",
+        "BedRbwndZE8"
+    ],
+    "B":[
+        "SwZMS-ISbH4",
+        "Hlp8XD0R5qo",
+        "BedRbwndZE8"
+    ],
+    "C":[
+        "SwZMS-ISbH4",
+        "Hlp8XD0R5qo",
+        "BedRbwndZE8"
+    ],
+    "D":[
+        "SwZMS-ISbH4",
+        "Hlp8XD0R5qo",
+        "BedRbwndZE8"
+    ]
+};
 
-let playTime = [
-    [100,102],
-    [100,102],
-    [100,102]
-];
+let playTime = {
+    "A":[
+        [92,108],
+        [100,102],
+        [100,102]
+    ],
+    "B":[
+        [100,102],
+        [100,102],
+        [100,102]
+    ],
+    "C":[
+        [100,102],
+        [100,102],
+        [100,102]
+    ],
+    "D":[
+        [100,102],
+        [100,102],
+        [100,102]
+    ],
+};
