@@ -5,7 +5,7 @@ let answers = "A";
 $(function(){
     $("#submit").on("click",function(){
         answers = $("input").val();
-    player.loadVideoById({
+    player.cueVideoById({
             videoId:playList[answers][currentPlay],
             startSeconds:playTime[answers][currentPlay][0],
             endSeconds:playTime[answers][currentPlay][1],
