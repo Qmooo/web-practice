@@ -1,45 +1,45 @@
 let playList = {
     "A":[
         "78NED_I0lU0",
-        "Hlp8XD0R5qo",
-        "BedRbwndZE8"
+        "P02sEySphAw",
+        "mJwyo5fH3jY"
     ],
     "B":[
-        "SwZMS-ISbH4",
-        "Hlp8XD0R5qo",
-        "BedRbwndZE8"
+        "OV9kVXSehCc",
+        "OtEJ6LGCW-U",
+        "pzmKq-jdEAM"
     ],
     "C":[
-        "SwZMS-ISbH4",
-        "Hlp8XD0R5qo",
-        "BedRbwndZE8"
+        "WxZvXPTBC0A",
+        "hjXrL7CuAvc",
+        "F2uX6ByoW7A"
     ],
     "D":[
-        "SwZMS-ISbH4",
-        "Hlp8XD0R5qo",
-        "BedRbwndZE8"
+        "QOPTkoK0MXI",
+        "fzuy63eCUKc",
+        "c9PEYJdwdwI"
     ]
 };
 
 let playTime = {
     "A":[
         [92,108],
-        [100,102],
-        [100,102]
+        [92,120],
+        [64,78]
     ],
     "B":[
-        [100,102],
-        [100,102],
-        [100,102]
+        [78,85],
+        [54,72],
+        [78,88]
     ],
     "C":[
-        [100,102],
-        [100,102],
-        [100,102]
+        [72,98],
+        [78,90],
+        [92,115]
     ],
     "D":[
-        [100,102],
-        [100,102],
-        [100,102]
+        [66,72],
+        [46,65],
+        [10,38]
     ],
 };

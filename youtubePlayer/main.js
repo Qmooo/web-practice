@@ -1,6 +1,14 @@
 let player;
 let currentPlay = 0;
 let answers = "A";
+
+function chooseMusicType(){
+    $("#submit").on("click",function(){
+        answers = $("input").val();
+        console.log(answers);
+    });
+}
+
 function onYouTubeIframeAPIReady(){
     player = new YT.Player("player",{
         height:"390",
@@ -53,3 +61,4 @@ function onPlayerStateChange(event){
         $("h2").text(player.getVideoData().title);
     }
 }
+
