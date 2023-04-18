@@ -2,6 +2,18 @@ let player;
 let currentPlay = 0;
 let answers = "A";
 
+$(function(){
+    $("#submit").on("click",function(){
+    answers = $("input").val();
+        player.loadVideoById({
+            videoId:playList[answers][currentPlay],
+            startSeconds:playTime[answers][currentPlay][0],
+            endSeconds:playTime[answers][currentPlay][1],
+            suggestedQuality:"large"
+        });
+    });
+});
+
 function onYouTubeIframeAPIReady(){
     player = new YT.Player("player",{
         height:"390",
@@ -19,16 +31,7 @@ function onYouTubeIframeAPIReady(){
             onStateChange:onPlayerStateChange
         }
     });
-    
-    $("#submit").on("click",function(){
-        answers = $("input").val();
-        player.loadVideoById({
-            videoId:playList[answers][currentPlay],
-            startSeconds:playTime[answers][currentPlay][0],
-            endSeconds:playTime[answers][currentPlay][1],
-            suggestedQuality:"large"
-        });
-    });
+
 }
 
 function onPlayerReady(event){
